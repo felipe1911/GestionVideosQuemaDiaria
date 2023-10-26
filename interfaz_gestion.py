@@ -14,6 +14,9 @@ uploader.upload(archivo_video)
 
 #Conexion con redis
 redis = RedisClient()
+redis.check_cache()
+redis.insert_cache(archivo_video)
+redis.check_cache()
 
 #Conexion con SAN
 san =  SanConector()
