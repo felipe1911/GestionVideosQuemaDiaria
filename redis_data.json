@@ -1,0 +1,17 @@
+{
+  "1_Instructor 1_stats": {
+    "Course 1": {
+      "subscribers": ["User1", "User2", "User3"],
+      "videos": {
+        "Video 1": {"likes": 3, "comments": ["User1: Helpful", "User2: Thanks!"]},
+        "Video 2": {"likes": 2, "comments": ["User3: Interesting"]}
+      }
+    },
+    "Course 2": {
+      "subscribers": ["User4", "User5"],
+      "videos": {
+        "Video 3": {"likes": 5, "comments": ["User4: Great course!", "User5: Amazing content!"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "1_Instructor 1_stats": {
+    "Course 1": {
+      "subscribers": ["User1", "User2", "User3", "User4", "User5"],
+      "videos": {
+        "Video 1": {"likes": 3, "comments": ["User1: Helpful", "User2: Thanks!"]},
+        "Video 2": {"likes": 2, "comments": ["User3: Interesting"]}
+      }
+    },
+    "Course 2": {
+      "subscribers": ["User6", "User7", "User8"],
+      "videos": {
+        "Video 3": {"likes": 5, "comments": ["User4: Great course!", "User5: Amazing content!"]}
+      }
+    }
+  },
+  "2_Instructor 2_stats": {
+    "Course 3": {
+      "subscribers": ["User9", "User10", "User11"],
+      "videos": {
+        "Video 4": {"likes": 4, "comments": ["User9: Insightful", "User10: Well explained"]}
+      }
+    },
+    "Course 4": {
+      "subscribers": ["User12", "User13"],
+      "videos": {
+        "Video 5": {"likes": 6, "comments": ["User12: Informative", "User13: Clear instructions"]}
+      }
+    }
+  }
+}
