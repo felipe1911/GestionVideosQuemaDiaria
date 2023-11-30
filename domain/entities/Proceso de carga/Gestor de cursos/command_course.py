@@ -1,4 +1,4 @@
-import add_course_to_db
+from add_course_to_db import add_course_to_db
 class CommandCourse:
     def __init__(self):
         pass
