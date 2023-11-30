@@ -1,5 +1,9 @@
-class Subscriber():
-    def __init__():
-        pass
-    def update():
-        pass
+from abc import ABC, abstractmethod
+
+class Subscriber(ABC):
+  def __init__(self,id_subscriber, user):
+    pass
+  
+  @abstractmethod
+  def update():
+    pass
