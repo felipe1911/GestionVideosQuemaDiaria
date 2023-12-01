@@ -20,10 +20,9 @@ course_instance = Course(
     comments=['Great course!', 'Looking forward to more videos.']
 )
 
+def interface_subscription(user,course):
+    publisher_instance = Publisher(course_instance)
+    publisher_instance.subscribe(user_instance,'email')
+    publisher_instance.subscribe(user_instance,'sms')
 
-
-publisher_instance = Publisher(course_instance)
-publisher_instance.subscribe(user_instance,'email')
-publisher_instance.subscribe(user_instance,'sms')
-
-publisher_instance.notify_users()
+    publisher_instance.notify_users()

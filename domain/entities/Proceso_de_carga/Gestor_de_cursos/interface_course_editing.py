@@ -3,11 +3,15 @@ from .update_existing_course import update_existing_course
 
 def interface_edit_course(instructor):
 
+    if len(instructor.courses) == 0:
+        print('\Todavia no tiene cursos :(')
+        return
 
     print('Estos son sus cursos: \n')
     for i, course in enumerate(instructor.courses):
         print(f'{i+1}. {course.title}')
 
+    
     selection_course_to_update = input('Ingrese el curso que desea editar: ')
 
     course_selected_to_update = instructor.courses[int(selection_course_to_update)-1]
@@ -27,4 +31,4 @@ def interface_edit_course(instructor):
     
 
     update_existing_course(course_selected_to_update, new_title,new_description,new_tags)
-    print("Curso agregado con éxito")
+    print("\nCurso agregado con éxito")
