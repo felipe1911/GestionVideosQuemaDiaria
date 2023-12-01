@@ -1,4 +1,4 @@
-from publisher import Publisher
+from .publisher import Publisher
 
 from course import Course
 from user import User
@@ -20,7 +20,7 @@ course_instance = Course(
     comments=['Great course!', 'Looking forward to more videos.']
 )
 
-def interface_subscription(user,course):
+def interface_notifier(user,course):
     publisher_instance = Publisher(course_instance)
     publisher_instance.subscribe(user_instance,'email')
     publisher_instance.subscribe(user_instance,'sms')

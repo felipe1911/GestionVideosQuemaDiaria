@@ -76,6 +76,15 @@ def interfaz_gestion():
                 if option_action == '3':
                     break
 
+        #Opción Moderador
+        if option_role== '3':
+            print('\n Bienvenido a la plataforrma moderador\n')
+            while True:
+                option_action = input('1. Marcar contenido \n2. Salir \n  ¿Qué desea hacer?: ')
+                if option_action == '1':
+                    pass
+                if option_action == '2':
+                    break
 
 
         if option_role == '4':
