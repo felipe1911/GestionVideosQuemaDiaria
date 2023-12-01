@@ -7,20 +7,18 @@ class CalculateSimilarityCommand:
 
     def execute(self):
 
-        user_id = self.user["id"]
-        
-        user_goals = self.user["goals"]
-        course_id = self.course["id"]
+        user_id = self.user.id
+        user_name = self.user.name
+        user_goals = self.user.goals
         course_title = self.course['title']
         course_tags = self.course["tags"]
         common_tags = set(user_goals) & set(course_tags)
         similarity_score = len(common_tags) / len(set(user_goals)) * 100
 
         if similarity_score > 0:
-            print(f"Similitud siendo calculada para {user_id} and curso {course_title}...")
+            print(f"Similitud siendo calculada para {user_name} and curso {course_title}...")
             self.similarity_results.append({
-                "course_id": course_id,
-                'course_title': course_title,
+                'title': course_title,
                 "similarity_score": similarity_score,
                 "common_tags": common_tags
             })

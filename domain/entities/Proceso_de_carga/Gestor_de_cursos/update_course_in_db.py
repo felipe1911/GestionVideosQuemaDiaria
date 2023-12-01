@@ -17,7 +17,7 @@ def update_course_in_db(original_course,modified_course):
             with open('domain\database\database_courses.json', 'w') as file:
                 json.dump(data, file, indent=2)
             
-            print(f"Course with title '{title_to_find}' updated successfully.")
+            print(f"Curso con el titulo '{title_to_find}' actualizado correctamente.")
             return
 
-    print(f"Course with title '{title_to_find}' not found.")
+    print(f"Curso con el titulo  '{title_to_find}' no fue encontrado")
