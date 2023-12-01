@@ -8,7 +8,7 @@ class RecommendCourses:
 
     def find_recommendations(self):
         for course in self.data:
-            instructor = course['instructor']
+            instructor = course['id instructor']
             
             CalculateSimilarityCommand(self.user, instructor, course, self.similarity_results).execute()
 
