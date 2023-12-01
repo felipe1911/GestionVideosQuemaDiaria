@@ -51,7 +51,6 @@ def interfaz_gestion():
 
                 if option_action == '2':
                     interface_edit_course(test_instructor)
-                    pass
 
                 if option_action == '4':
                     print('\nSesion cerrada\n')
