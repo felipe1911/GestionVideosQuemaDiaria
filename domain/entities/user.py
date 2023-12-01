@@ -3,5 +3,6 @@ class User:
     self.id = id
     self.name = name
     self.email = email
+    self.goals = []
     self.phone_number = phone_number
     self.subscriptions = []
