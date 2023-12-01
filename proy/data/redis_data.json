@@ -1,0 +1,144 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Fitness Guru",
+      "email": "fitness.guru@example.com",
+      "phone_number": 1234567890,
+      "courses": [
+        {
+          "id": 101,
+          "title": "Cardio Workout",
+          "description": "Improve cardiovascular health with high-intensity cardio exercises.",
+          "tags": [
+            "Fitness",
+            "Cardio"
+          ],
+          "subscribers": [
+            "User1",
+            "User2",
+            "User3",
+            "User4"
+          ],
+          "videos": [
+            {
+              "id": 1011,
+              "title": "High-Intensity Interval Training",
+              "tags": [
+                "Fitness",
+                "Cardio"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/hiiT",
+              "duration": 30,
+              "comments": [
+                {
+                  "user": "User1",
+                  "comment": "Great workout!"
+                },
+                {
+                  "user": "User2",
+                  "comment": "I felt the burn!"
+                },
+                {
+                  "user": "User3",
+                  "comment": "More of these, please!"
+                }
+              ],
+              "likes": 15,
+              "approved": true
+            },
+            {
+              "id": 1012,
+              "title": "Jump Rope Challenge",
+              "tags": [
+                "Fitness",
+                "Cardio"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/jumpRope",
+              "duration": 20,
+              "comments": [
+                {
+                  "user": "User4",
+                  "comment": "Simple and effective!"
+                },
+                {
+                  "user": "User5",
+                  "comment": "My heart rate went up!"
+                }
+              ],
+              "likes": 10,
+              "approved": true
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Strength Training",
+          "description": "Build strength and tone muscles with effective strength training exercises.",
+          "tags": [
+            "Fitness",
+            "Strength"
+          ],
+          "subscribers": [
+            "User3",
+            "User5",
+            "User6",
+            "User7",
+            "User8",
+            "User9"
+          ],
+          "videos": [
+            {
+              "id": 1021,
+              "title": "Full Body Workout",
+              "tags": [
+                "Fitness",
+                "Strength"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/fullBody",
+              "duration": 45,
+              "comments": [
+                {
+                  "user": "User6",
+                  "comment": "Challenging but worth it!"
+                },
+                {
+                  "user": "User7",
+                  "comment": "Love the variety of exercises."
+                }
+              ],
+              "likes": 20,
+              "approved": true
+            },
+            {
+              "id": 1022,
+              "title": "Core Strengthening Routine",
+              "tags": [
+                "Fitness",
+                "Strength"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/core",
+              "duration": 25,
+              "comments": [
+                {
+                  "user": "User8",
+                  "comment": "My abs are on fire!"
+                },
+                {
+                  "user": "User9",
+                  "comment": "Great for building a strong core."
+                }
+              ],
+              "likes": 12,
+              "approved": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
