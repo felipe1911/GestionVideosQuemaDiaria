@@ -13,8 +13,15 @@ def interface_create_course(instructor):
         print("")
         if add_new_tag != "1":
             break
+    schedule_upload = input('¿Desea programar la subida del curso? (s/n): ')
+    if schedule_upload == 's':
+        scheduled_date =  input('Defina de la fecha de subida : ')
+        scheduled_time = input('Defina la hora de subida (hh:mm): ')
+        print(f'Subida de curso: {title} programada para {scheduled_date} a las {scheduled_time}')
+
     add_new_course(title, description, instructor, tags)
     print("Curso agregado con éxito")
+
     
     
 
