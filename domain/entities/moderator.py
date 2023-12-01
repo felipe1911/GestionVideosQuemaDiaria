@@ -1,7 +1,7 @@
 from .Aprobar_videos.check_and_approve_videos_command import CheckAndApproveVideosCommand
 
 class Moderator:
-  def _init_(self, id:int, name:str, email:str) -> None:
+  def __init__(self, id:int, name:str, email:str) -> None:
     self.id = id
     self.name = name
     self.email = email

@@ -8,4 +8,3 @@ class UpdateJsonCommand:
     def execute(self):
         with open(self.file_path, "w") as file:
             json.dump(self.new_data, file, indent=2)
-        print(f"{self.file_path} file updated.")
