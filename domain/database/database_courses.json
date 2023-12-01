@@ -8,5 +8,15 @@
             ],
             "videos": [],
             "comments": []
+      },
+      {
+            "title": "Aumenta tu masa muscular",
+            "description": "Curso para aumentar tu masa muscular",
+            "instructor": "Luna",
+            "tags": [
+                  "músculo"
+            ],
+            "videos": [],
+            "comments": []
       }
 ]

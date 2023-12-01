@@ -1,2 +1,0 @@
-from interface_course_creation import interface_create_course
-interface_create_course('Ana')

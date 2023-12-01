@@ -1,5 +1,6 @@
 class Video:
-    def _init_(self, title, tags, author, url, duration, comments=None, likes=None):
+    def __init__(self, id, title, tags, author, url, duration, comments=None, likes=None):
+        self.id = id
         self.title = title
         self.tags = tags
         self.author = author
@@ -11,4 +12,5 @@ class Video:
 
     def __str__(self) -> str:
         return self.name
+    
     
