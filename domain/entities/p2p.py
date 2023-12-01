@@ -45,7 +45,7 @@ def p2p(videos,course):
 
         print("\n Nodo 3 actualizando datos del curso")
         course_new = CourseFactory.create_course(course.title, course.description, course.instructor, course.tags)
-        course_new.videos = [video.id for video in videos]
+        course_new.videos = [{'id': video.id, 'title': video.title, 'approved': video.approved} for video in videos]
         update_course_in_db(course,course_new)
 
         print("\n Nodo 4 integrando sistema P2P")

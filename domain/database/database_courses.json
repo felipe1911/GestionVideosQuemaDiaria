@@ -1,3 +1,28 @@
 [
-
+  {
+    "title": "a",
+    "description": "a",
+    "id instructor": 10,
+    "tags": [
+      "a"
+    ],
+    "videos": [
+      {
+        "id": 3144,
+        "title": "b",
+        "approved": false
+      },
+      {
+        "id": 9859,
+        "title": "c",
+        "approved": false
+      },
+      {
+        "id": 3243,
+        "title": "d",
+        "approved": false
+      }
+    ],
+    "comments": []
+  }
 ]
