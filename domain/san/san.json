@@ -10,5 +10,18 @@
                 "comments": [],
                 "likes": 0,
                 "approved": false
+        },
+        {
+                "id": 1,
+                "title": "video",
+                "tags": [
+                        "panza",
+                        "cat"
+                ],
+                "author": "Ana",
+                "duration": 200,
+                "comments": [],
+                "likes": 0,
+                "approved": false
         }
 ]
