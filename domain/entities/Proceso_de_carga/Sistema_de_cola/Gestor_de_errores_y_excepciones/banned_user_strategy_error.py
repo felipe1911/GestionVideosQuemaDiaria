@@ -1,5 +1,5 @@
 from .strategy_error import StrategyError
 
-class DurationStrategyError(StrategyError):
+class BannedUserStrategyError(StrategyError):
     def get_error(self):
-        return 3
+        return 2
