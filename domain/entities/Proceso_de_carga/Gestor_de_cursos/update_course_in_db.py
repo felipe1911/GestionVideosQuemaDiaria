@@ -12,6 +12,7 @@ def update_course_in_db(original_course,modified_course):
             course["title"] = modified_course.title
             course["description"] = modified_course.description
             course["tags"] = modified_course.tags
+            course["videos"] = modified_course.videos
 
             # Rewrite the JSON file
             with open('domain\database\database_courses.json', 'w') as file:

@@ -10,34 +10,11 @@ from domain.entities.instructor import Instructor
 from domain.entities.user import User
 
 
-
-
 test_instructor = Instructor(10,'Ana','ana@gmail.com','3123142')
 test_user = User(id=1, name="John Doe", email="john@example.com", phone_number=1234567890)
 
 
 def interfaz_gestion():
-    # #Subir archivos
-    # uploader = P2pUploader()
-    # uploader.upload(video_file)
-
-    # #Conexion con redis
-    # redis = RedisClient()
-    # redis.check_cache()
-    # redis.insert_cache(video_file)    
-    # redis.check_cache()
-
-    # #Conexion con SAN
-    # san =  SanConector()
-
-
-    # #Descargar archivos
-    # downloader = P2pDownloader()
-    # downloader.download(video_file)
-    # #Seleccion tipo de usuario
-
-    
-
     while True:
         option_role = input('\n1. Instructor\n2. Usuario\n3. Moderador\n4. Salir\n Seleccione su rol: ')
         
@@ -54,6 +31,7 @@ def interfaz_gestion():
 
                 if option_action == '3':
                     upload_facade(test_instructor)
+
                 if option_action == '5':
                     print('\nSesion cerrada\n')
                     break
