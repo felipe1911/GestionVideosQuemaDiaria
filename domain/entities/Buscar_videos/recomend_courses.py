@@ -1,8 +1,7 @@
 from .calculate_similarity import CalculateSimilarityCommand
 
 class RecommendCourses:
-    def __init__(self, data,user):
-        self.data = data
+    def __init__(self, user):
         self.similarity_results = []
         self.user = user
 
