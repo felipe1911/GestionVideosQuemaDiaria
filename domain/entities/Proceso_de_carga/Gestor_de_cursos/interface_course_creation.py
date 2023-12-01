@@ -1,4 +1,6 @@
-from add_new_course import add_new_course
+from .add_new_course import add_new_course
+
+
 def interface_create_course(instructor):
 
     title = input("Ingresa el título del curso: ")

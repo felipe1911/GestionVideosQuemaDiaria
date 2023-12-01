@@ -1,4 +1,4 @@
-from course import Course
+from .course import Course
 
 class CourseFactory:
     def create_course(title, description, instructor, tags):

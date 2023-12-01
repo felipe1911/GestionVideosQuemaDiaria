@@ -3,21 +3,28 @@ from domain.p2p.p2p_downloader import P2pDownloader
 from domain.entities.video import Video
 from domain.cache.redis_client import RedisClient
 from domain.san.san_concector import SanConector
-from domain.entities.Proceso_de_carga.Gestor_de_cursos 
 
-archivo_video = Video('absWorkout.mp4')
+
+from domain.entities.Proceso_de_carga.Gestor_de_cursos.interface_course_creation import interface_create_course
+from domain.entities.Proceso_de_carga.Gestor_de_cursos.interface_course_editing import interface_edit_course
+
+from domain.entities.instructor import Instructor
+
+
+
+video_file = Video('absWorkout.mp4')
+test_instructor = Instructor(10,'Ana','ana@gmail.com','3123142')
 
 
 def interfaz_gestion():
     #Subir archivos
     uploader = P2pUploader()
-    uploader.upload(archivo_video)
-
+    uploader.upload(video_file)
 
     #Conexion con redis
     redis = RedisClient()
     redis.check_cache()
-    redis.insert_cache(archivo_video)
+    redis.insert_cache(video_file)    
     redis.check_cache()
 
     #Conexion con SAN
@@ -26,25 +33,32 @@ def interfaz_gestion():
 
     #Descargar archivos
     downloader = P2pDownloader()
-    downloader.download(archivo_video)
-
+    downloader.download(video_file)
     #Seleccion tipo de usuario
 
     
 
     while True:
-        option_role = input('1.Instructor\n2.Usuario\n3. Moderador\n  Seleccione su rol: ')
+        option_role = input('1. Instructor\n2. Usuario\n3. Moderador\n4. Salir\n Seleccione su rol: ')
         
         #Opcion instructor
         if option_role == '1':
             print('\nBienvenido a la plataforma instructor')
             while True:
-                option_action = input('1.Agregar Curso \n 2.Modificar Curso \n 3. Visualizar Estadísticas  \n 4. Salir  \n  ¿Qué desea hacer?: ')
-                if 
+                option_action = input('1. Agregar Curso \n2. Modificar Curso \n3. Visualizar Estadísticas \n4. Salir  \n  ¿Qué desea hacer?: ')
+                if option_action == '1':
+                    interface_create_course(test_instructor)
+
+                if option_action == '2':
+                    interface_edit_course(test_instructor)
+                    pass
+
                 if option_action == '4':
                     print('\nSesion cerrada\n')
                     break
-            
+        if option_role == '4':
+            break
+        
 
     
 interfaz_gestion()
