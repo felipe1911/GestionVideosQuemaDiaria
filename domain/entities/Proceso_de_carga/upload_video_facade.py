@@ -1,5 +1,7 @@
+import random
+
 def upload_video_facade(instructor):
-    id = 1
+    id = random.randint(0, 10000)
     title = input("\n\nIngresa el título del video: ")
     tags = []
     print("Ingresa máximo 10 categorías u objetivos del video\n")

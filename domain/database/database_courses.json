@@ -1,23 +1,28 @@
 [
   {
-    "title": "Baja la panza",
-    "description": "Curso para bajar la panza",
-    "instructor": "Ana",
+    "title": "a",
+    "description": "a",
+    "id instructor": 10,
     "tags": [
-      "panza",
-      "musculo"
+      "a"
     ],
-    "videos": ["video_hola"],
-    "comments": []
-  },
-  {
-    "title": "Curso",
-    "description": "curso",
-    "instructor": 10,
-    "tags": [
-      "curos"
+    "videos": [
+      {
+        "id": 3144,
+        "title": "b",
+        "approved": false
+      },
+      {
+        "id": 9859,
+        "title": "c",
+        "approved": false
+      },
+      {
+        "id": 3243,
+        "title": "d",
+        "approved": false
+      }
     ],
-    "videos": [],
     "comments": []
   }
 ]
