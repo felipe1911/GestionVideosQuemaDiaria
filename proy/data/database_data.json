@@ -1,0 +1,306 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Fitness Guru",
+      "email": "fitness.guru@example.com",
+      "phone_number": 1234567890,
+      "courses": [
+        {
+          "id": 101,
+          "title": "Cardio Workout",
+          "description": "Improve cardiovascular health with high-intensity cardio exercises.",
+          "tags": [
+            "Fitness",
+            "Cardio"
+          ],
+          "subscribers": [
+            "User1",
+            "User2",
+            "User3",
+            "User4"
+          ],
+          "videos": [
+            {
+              "id": 1011,
+              "title": "High-Intensity Interval Training",
+              "tags": [
+                "Fitness",
+                "Cardio"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/hiiT",
+              "duration": 30,
+              "comments": [
+                {
+                  "user": "User1",
+                  "comment": "Great workout!"
+                },
+                {
+                  "user": "User2",
+                  "comment": "I felt the burn!"
+                },
+                {
+                  "user": "User3",
+                  "comment": "More of these, please!"
+                }
+              ],
+              "likes": 15,
+              "approved": true
+            },
+            {
+              "id": 1012,
+              "title": "Jump Rope Challenge",
+              "tags": [
+                "Fitness",
+                "Cardio"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/jumpRope",
+              "duration": 20,
+              "comments": [
+                {
+                  "user": "User4",
+                  "comment": "Simple and effective!"
+                },
+                {
+                  "user": "User5",
+                  "comment": "My heart rate went up!"
+                }
+              ],
+              "likes": 10,
+              "approved": true
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Strength Training",
+          "description": "Build strength and tone muscles with effective strength training exercises.",
+          "tags": [
+            "Fitness",
+            "Strength"
+          ],
+          "subscribers": [
+            "User3",
+            "User5",
+            "User6",
+            "User7",
+            "User8",
+            "User9"
+          ],
+          "videos": [
+            {
+              "id": 1021,
+              "title": "Full Body Workout",
+              "tags": [
+                "Fitness",
+                "Strength"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/fullBody",
+              "duration": 45,
+              "comments": [
+                {
+                  "user": "User6",
+                  "comment": "Challenging but worth it!"
+                },
+                {
+                  "user": "User7",
+                  "comment": "Love the variety of exercises."
+                }
+              ],
+              "likes": 20,
+              "approved": false
+            },
+            {
+              "id": 1022,
+              "title": "Core Strengthening Routine",
+              "tags": [
+                "Fitness",
+                "Strength"
+              ],
+              "author": "Fitness Guru",
+              "url": "https://example.com/core",
+              "duration": 25,
+              "comments": [
+                {
+                  "user": "User8",
+                  "comment": "My abs are on fire!"
+                },
+                {
+                  "user": "User9",
+                  "comment": "Great for building a strong core."
+                }
+              ],
+              "likes": 12,
+              "approved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Yoga Master",
+      "email": "yoga.master@example.com",
+      "phone_number": 9876543210,
+      "courses": [
+        {
+          "id": 201,
+          "title": "Mindful Yoga",
+          "description": "Cultivate mindfulness through yoga practices.",
+          "tags": [
+            "Yoga",
+            "Mindfulness"
+          ],
+          "subscribers": [
+            "User2",
+            "User10",
+            "User11",
+            "User12",
+            "User13"
+          ],
+          "videos": [
+            {
+              "id": 2011,
+              "title": "Guided Meditation",
+              "tags": [
+                "Yoga",
+                "Mindfulness"
+              ],
+              "author": "Yoga Master",
+              "url": "https://example.com/guidedMeditation",
+              "duration": 15,
+              "comments": [
+                {
+                  "user": "User10",
+                  "comment": "Very calming."
+                },
+                {
+                  "user": "User11",
+                  "comment": "Helps me relax after a busy day."
+                }
+              ],
+              "likes": 8,
+              "approved": true
+            },
+            {
+              "id": 2012,
+              "title": "Flowing Yoga Sequence",
+              "tags": [
+                "Yoga",
+                "Mindfulness"
+              ],
+              "author": "Yoga Master",
+              "url": "https://example.com/yogaFlow",
+              "duration": 30,
+              "comments": [
+                {
+                  "user": "User12",
+                  "comment": "I love the flow of these poses."
+                },
+                {
+                  "user": "User13",
+                  "comment": "Great for flexibility."
+                }
+              ],
+              "likes": 10,
+              "approved": false
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "title": "Strength and Flexibility",
+          "description": "Combine strength-building and flexibility-enhancing yoga poses.",
+          "tags": [
+            "Yoga",
+            "Strength",
+            "Flexibility"
+          ],
+          "subscribers": [
+            "User1",
+            "User3",
+            "User14",
+            "User15"
+          ],
+          "videos": [
+            {
+              "id": 2021,
+              "title": "Powerful Yoga Flow",
+              "tags": [
+                "Yoga",
+                "Strength",
+                "Flexibility"
+              ],
+              "author": "Yoga Master",
+              "url": "https://example.com/powerfulYoga",
+              "duration": 40,
+              "comments": [
+                {
+                  "user": "User14",
+                  "comment": "I feel invigorated after this session."
+                },
+                {
+                  "user": "User15",
+                  "comment": "Excellent combination of strength and flexibility exercises."
+                }
+              ],
+              "likes": 18,
+              "approved": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "User1",
+      "email": "john.doe@example.com",
+      "phone_number": 1234567890,
+      "subscriptions": [
+        101,
+        202
+      ],
+      "goals": [
+        "Fitness",
+        "Cardio"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "User2",
+      "email": "jane.smith@example.com",
+      "phone_number": 9876543210,
+      "subscriptions": [
+        101,
+        201
+      ],
+      "goals": [
+        "Fitness",
+        "Cardio"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "User3",
+      "email": "bob.johnson@example.com",
+      "phone_number": 5555555555,
+      "subscriptions": [
+        101,
+        102,
+        202
+      ],
+      "goals": [
+        "Fitness",
+        "Cardio",
+        "Strength",
+        "Mindfulness",
+        "Flexibility"
+      ]
+    }
+  ]
+}
