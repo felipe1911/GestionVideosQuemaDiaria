@@ -88,18 +88,19 @@ if __name__ == "__main__":
     db_data = LoadDataCommand('../data/database_data.json').execute()
     redis_data = LoadDataCommand('../data/redis_data.json').execute()
 
+    #STATS
     strategy = DataLoadStrategy()
     instructor_data = strategy.load_data()
-
     printStatsCommand = PrintStatsCommand(instructor_data)
     printStatsCommand.execute()
 
+    #APPROVE VIDEOS
     moderator = Moderator(id=1, name="John", email="john@example.com")
     moderator.check_and_approve_videos(db_data)
 
+    #RECOMMENDATIONS
     recommendation_engine = RecommendCourses(db_data)
     recommendation_engine.find_recommendations()
-
     display_engine = DisplayRecommendations(recommendation_engine.similarity_results)
     display_engine.display()
 
