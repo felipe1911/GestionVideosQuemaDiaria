@@ -6,7 +6,8 @@ from domain.entities.Proceso_de_carga.Gestor_de_cursos.interface_course_editing 
 from domain.entities.Buscar_videos.interface_search_videos import interface_search_videos
 from domain.entities.upload_facade import upload_facade
 from domain.entities.Buscar_videos.interface_recommend_videos import interface_recommend_videos
-from domain.entities.Aprobar_videos.interfaz_aprobar_videos import interfaz_aprobar_videos
+from domain.entities.Aprobar_videos.interface_approve_videos import interface_approve_videos
+from domain.entities.Mostrar_estadisticas.interface_visualize_stats import interface_visualize_stats
 
 from domain.entities.instructor import Instructor
 from domain.entities.user import User
@@ -36,6 +37,9 @@ def interfaz_gestion():
                 if option_action == '3':
                     upload_facade(test_instructor)
 
+                if option_action == '4':
+                    interface_visualize_stats(test_instructor)
+
                 if option_action == '5':
                     print('\nSesion cerrada\n')
                     break
@@ -50,7 +54,6 @@ def interfaz_gestion():
                     pass
                 if option_action == '2':
                     interface_recommend_videos(test_user)
-                    pass
                 if option_action == '3':
                     break
 
@@ -60,7 +63,7 @@ def interfaz_gestion():
             while True:
                 option_action = input('1. Marcar contenido \n2. Salir \n  ¿Qué desea hacer?: ')
                 if option_action == '1':
-                    interfaz_aprobar_videos(test_moderator)
+                    interface_approve_videos(test_moderator)
                 if option_action == '2':
                     break
 
